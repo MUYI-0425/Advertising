@@ -26,7 +26,7 @@
  本地图片
  */
 - (IBAction)local:(id)sender {
-    NSArray *temp = [NSArray arrayWithObjects:[UIImage imageNamed:@"1"],[UIImage imageNamed:@"2"],[UIImage imageNamed:@"3"], nil];
+    NSArray *temp = [NSArray arrayWithObjects:[UIImage imageNamed:@"1"], nil];
     [XDAdvertising createXDAdvertisingWithImageURLS:temp  imageUrlContainer:^(NSArray<UIImageView *> *imageViews) {
         for (int i = 0; i < imageViews.count; i++) {
             imageViews[i].image = temp[i];
