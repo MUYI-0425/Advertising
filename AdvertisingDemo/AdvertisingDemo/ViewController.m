@@ -24,32 +24,32 @@
 
 /**
  本地图片
-
- @param sender
  */
 - (IBAction)local:(id)sender {
     NSArray *temp = [NSArray arrayWithObjects:[UIImage imageNamed:@"1"],[UIImage imageNamed:@"2"],[UIImage imageNamed:@"3"], nil];
-    [XDAdvertising createXDAdvertisingWithImages:temp
-                                     aspectRatio:self.aspectRatio
-                                    tapImageFlag:^(NSInteger imageFlag) {
+    [XDAdvertising createXDAdvertisingWithImageURLS:temp  imageUrlContainer:^(NSArray<UIImageView *> *imageViews) {
+        for (int i = 0; i < imageViews.count; i++) {
+            imageViews[i].image = temp[i];
+        }
+    } tapImageFlag:^(NSInteger imageFlag) {
         NSLog(@"%ld",imageFlag);
     }];
 }
 
 /**
  远程图片
-
- @param sender
  */
 - (IBAction)remote:(id)sender {
-    NSArray *tempUrls = [NSArray arrayWithObjects:[NSString stringWithFormat:@""], nil];
-    [XDAdvertising createXDAdvertisingWithImageURLS:tempUrls.count
-                                        aspectRatio:self.aspectRatio
+    
+    NSArray *tempUrls = [NSArray arrayWithObjects:@"https://img3.doubanio.com/view/subject/l/public/s1166805.jpg",@"https://img3.doubanio.com/view/subject/s/public/s1747553.jpg",@"https://img3.doubanio.com/view/subject/l/public/s1299171.jpg", nil];
+    
+    [XDAdvertising createXDAdvertisingWithImageURLS:tempUrls
                                   imageUrlContainer:^(NSArray<UIImageView *> *imageViews) {
         //这里以sdwebimage为例
         for (int i = 0; i < imageViews.count; i++) {
             [imageViews[i] sd_setImageWithURL:[NSURL URLWithString:tempUrls[i]]];
         }
+                                      
     } tapImageFlag:^(NSInteger imageFlag) {
         NSLog(@"%ld",imageFlag);
     }];

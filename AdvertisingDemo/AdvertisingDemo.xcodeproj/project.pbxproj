@@ -18,6 +18,7 @@
 		1808A45F20EDBEAB0075200A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1808A45C20EDBEAB0075200A /* 2.png */; };
 		1808A46020EDBEAB0075200A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1808A45D20EDBEAB0075200A /* 1.png */; };
 		1808A46220EDBF120075200A /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1808A46120EDBF120075200A /* close.png */; };
+		1808A46820EEF9B10075200A /* ImgAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808A46720EEF9B10075200A /* ImgAspect.m */; };
 		B175E1F6C5FE3A4E9174DBFB /* libPods-AdvertisingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 187DC95184E89605F2B79784 /* libPods-AdvertisingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		1808A45C20EDBEAB0075200A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		1808A45D20EDBEAB0075200A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		1808A46120EDBF120075200A /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		1808A46620EEF9B10075200A /* ImgAspect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgAspect.h; sourceTree = "<group>"; };
+		1808A46720EEF9B10075200A /* ImgAspect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgAspect.m; sourceTree = "<group>"; };
 		187DC95184E89605F2B79784 /* libPods-AdvertisingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdvertisingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C5477EEA8CE015B21931C6 /* Pods-AdvertisingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvertisingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvertisingDemo/Pods-AdvertisingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F4180D88BF11F24912BCED60 /* Pods-AdvertisingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvertisingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvertisingDemo/Pods-AdvertisingDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 			children = (
 				1808A45820EDB4CA0075200A /* XDAdvertising.h */,
 				1808A45920EDB4CA0075200A /* XDAdvertising.m */,
+				1808A46620EEF9B10075200A /* ImgAspect.h */,
+				1808A46720EEF9B10075200A /* ImgAspect.m */,
 			);
 			path = XDAdvertising;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				1808A45120EDB2680075200A /* main.m in Sources */,
 				1808A45A20EDB4CA0075200A /* XDAdvertising.m in Sources */,
 				1808A44320EDB2680075200A /* AppDelegate.m in Sources */,
+				1808A46820EEF9B10075200A /* ImgAspect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
